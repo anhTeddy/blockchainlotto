@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>A Simple Hello World Lotto Application</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Candidate Address</th>
+          <th>Candidate Name</th>
+          <th>Bet Amount</th>
+          <th>Picked Number</th>
+          <th>Bet Time</th>
+          <th>Win Amount</th>
+        </tr>
+      </thead>
+      <tbody id= "userList">
+      </tbody>
+    </table>
+  </div>
+  <label for="candidate">Candidate Name:</label>
+  <input type="text" id="candidate" />
+  <label for="betAmount">Bet Amount:</label>
+  <input type="text" id="betAmount" />
+  <label for="pickedNumber">Number:</label>
+  <input type="text" id="pickedNumber" />
+  <label id="winNumber">Win Number:</label>
+  <a href="#" onclick="bet()" class="btn btn-primary">Bet</a>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
